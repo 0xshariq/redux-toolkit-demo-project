@@ -1,0 +1,164 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter, transform;
+  transition: filter 300ms, transform 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 3em #3b82f6aa);
+  transform: scale(1.1) rotate(10deg);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 3em #61dafbaa);
+  transform: scale(1.1) rotate(-10deg);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 15s ease-in-out;
+  }
+}
+
+.card {
+  padding: 2em;
+  margin: 1.5em auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 300ms, box-shadow 300ms;
+  cursor: pointer;
+}
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.read-the-docs {
+  color: #666;
+  font-size: 1.1rem;
+  margin-top: 1.5rem;
+  line-height: 1.6;
+  transition: color 300ms;
+}
+.read-the-docs:hover {
+  color: #3b82f6;
+  text-decoration: underline;
+}
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 2rem auto;
+  font-family: 'Poppins', sans-serif;
+}
+
+.counter-value {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #3b82f6;
+  text-shadow: 0 2px 4px rgba(59, 130, 246, 0.3);
+  transition: transform 300ms;
+}
+
+.counter-value:hover {
+  transform: scale(1.1);
+}
+
+.counter-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.counter-buttons button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  background: #3b82f6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+  transition: background-color 300ms, transform 300ms, box-shadow 300ms;
+}
+
+.counter-buttons button:hover {
+  background-color: #2563eb;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(37, 99, 235, 0.3);
+}
+
+.counter-buttons button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.2);
+}
+
+.counter-input-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.counter-input-group input {
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: 2px solid #cbd5e1;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 300ms;
+}
+
+.counter-input-group input:focus {
+  border-color: #3b82f6;
+}
+
+.counter-input-group button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  background: #10b981;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.3);
+  transition: background-color 300ms, transform 300ms, box-shadow 300ms;
+}
+
+.counter-input-group button:hover {
+  background-color: #059669;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(5, 150, 105, 0.3);
+}
+
+.counter-input-group button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(5, 150, 105, 0.2);
+}
